@@ -5,8 +5,6 @@ import Redis from 'ioredis';
 import { REDIS_CLIENT_TOKEN, REDIS_PUB_CONFIG_TOKEN, REDIS_PUB_SUB_TOKEN, REDIS_SUB_CONFIG_TOKEN } from './constants';
 import { InjectRedisClient, InjectRedisPubSub } from './helpers';
 
-export { Redis, RedisPubSub };
-
 export interface IOModuleAsyncOptions extends Pick<ModuleMetadata, 'imports'> {
     useFactory: (...args: any[]) => Promise<Redis.RedisOptions> | Redis.RedisOptions;
     inject?: any[];

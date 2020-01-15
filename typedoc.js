@@ -1,9 +1,9 @@
 module.exports = {
     mode: 'modules',
     out: 'docs',
-    exclude: ['**/test/**', '**/apollo-server-*/**'],
+    exclude: ['**/test/**'],
     theme: 'default',
-    name: 'Nestjs ACL Documentation',
+    name: 'Nestjs Graphql Redis Subscriptions',
     ignoreCompilerErrors: false,
     excludeExternals: true,
     excludePrivate: false,
