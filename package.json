@@ -16,7 +16,7 @@
         "lint": "tslint -c tslint.json -t verbose 'src/**/*.{ts,tsx,js,jsx}'"
     },
     "peerDependencies": {
-        "@nestjs/common": "6.10.14"
+        "@nestjs/common": "6.11.11"
     },
     "dependencies": {
         "nestjs-node-config": "^0.0.1",
@@ -26,9 +26,9 @@
         "ioredis": "4.14.1"
     },
     "devDependencies": {
-        "@nestjs/common": "6.10.14",
-        "@nestjs/core": "6.10.14",
-        "@nestjs/testing": "6.10.14",
+        "@nestjs/common": "6.11.11",
+        "@nestjs/core": "6.11.11",
+        "@nestjs/testing": "6.11.11",
         "reflect-metadata": "0.1.13",
         "rxjs": "6.5.4",
         "jest": "24.9.0",
