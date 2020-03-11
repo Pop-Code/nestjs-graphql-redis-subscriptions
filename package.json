@@ -38,7 +38,7 @@
         "typedoc": "0.16.2",
         "typescript": "3.7.4",
         "prettier": "1.19.1",
-        "tslint": "5.20.1",
+        "tslint": "6.1.0",
         "@types/jest": "24.0.25",
         "@types/node": "13.1.6",
         "@types/ioredis": "4.14.3"
