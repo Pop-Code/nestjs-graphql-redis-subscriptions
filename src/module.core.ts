@@ -2,6 +2,7 @@ import { DynamicModule, Global, Module, OnModuleDestroy, Optional } from '@nestj
 import { ModuleMetadata } from '@nestjs/common/interfaces';
 import { RedisPubSub } from 'graphql-redis-subscriptions';
 import Redis from 'ioredis';
+
 import { REDIS_CLIENT_TOKEN, REDIS_PUB_CONFIG_TOKEN, REDIS_PUB_SUB_TOKEN, REDIS_SUB_CONFIG_TOKEN } from './constants';
 import { InjectRedisClient, InjectRedisPubSub } from './helpers';
 
@@ -23,7 +24,7 @@ export class IOCoreModule implements OnModuleDestroy {
         private readonly redisPubSub: RedisPubSub
     ) {}
 
-    async onModuleDestroy() {
+    async onModuleDestroy(): Promise<void> {
         if (this.redisClient) {
             this.redisClient.disconnect();
         }
