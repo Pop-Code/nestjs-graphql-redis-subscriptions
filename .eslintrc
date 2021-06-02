@@ -7,9 +7,10 @@
         "project": "./tsconfig.json",
         "sourceType": "module"
     },
-    "ignorePatterns": ["dist/test/*", "typedoc.js"],
+    "ignorePatterns": ["typedoc.js"],
     "plugins": ["@typescript-eslint", "prefer-arrow", "import"],
     "extends": [
+        "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier"

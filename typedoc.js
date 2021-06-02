@@ -1,9 +1,8 @@
 module.exports = {
     out: 'docs',
-    entryPoints: ['src/index.ts'],
+    exclude: ['**/test/**/*'],
     theme: 'default',
-    name: 'Nestjs Graphql Redis Subscriptions',
-    excludeExternals: true,
+    name: 'Nestjs-graphql-redis-subscriptions',
     excludePrivate: false,
     hideGenerator: true
 };
