@@ -43,7 +43,7 @@
         "jest": "27.0.3",
         "reflect-metadata": "0.1.13",
         "rxjs": "6.6.7",
-        "ts-jest": "27.0.2",
+        "ts-jest": "27.0.5",
         "ts-node": "10.0.0",
         "tsconfig-paths": "3.9.0",
         "typedoc": "0.20.36",
