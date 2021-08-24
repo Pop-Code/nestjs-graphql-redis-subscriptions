@@ -58,7 +58,7 @@
 					<a href="../modules/module_core.html">module.core</a>
 				</li>
 				<li>
-					<a href="module_core.iomoduleasyncoptions.html">IOModuleAsyncOptions</a>
+					<a href="module_core.IOModuleAsyncOptions.html">IOModuleAsyncOptions</a>
 				</li>
 			</ul>
 			<h1>Interface IOModuleAsyncOptions</h1>
@@ -88,9 +88,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="module_core.iomoduleasyncoptions.html#imports" class="tsd-kind-icon">imports</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="module_core.iomoduleasyncoptions.html#inject" class="tsd-kind-icon">inject</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="module_core.iomoduleasyncoptions.html#usefactory" class="tsd-kind-icon">use<wbr>Factory</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="module_core.IOModuleAsyncOptions.html#imports" class="tsd-kind-icon">imports</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="module_core.IOModuleAsyncOptions.html#inject" class="tsd-kind-icon">inject</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="module_core.IOModuleAsyncOptions.html#useFactory" class="tsd-kind-icon">use<wbr>Factory</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,40 +126,35 @@
 					<div class="tsd-signature tsd-kind-icon">inject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Pop-Code/nestjs-graphql-redis-subscriptions/blob/8c1d8f2/src/module.core.ts#L11">src/module.core.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/Pop-Code/nestjs-graphql-redis-subscriptions/blob/b0c8396/src/module.core.ts#L11">src/module.core.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="usefactory" class="tsd-anchor"></a>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="useFactory" class="tsd-anchor"></a>
 					<h3>use<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">use<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Pop-Code/nestjs-graphql-redis-subscriptions/blob/8c1d8f2/src/module.core.ts#L10">src/module.core.ts:10</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Factory<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Pop-Code/nestjs-graphql-redis-subscriptions/blob/b0c8396/src/module.core.ts#L10">src/module.core.ts:10</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RedisOptions</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -162,7 +162,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" ">
-						<a href="../modules.html">Exports</a>
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/constants.html">constants</a>
@@ -184,21 +184,21 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/module_core.iocoremodule.html" class="tsd-kind-icon">IOCore<wbr>Module</a>
+						<a href="../classes/module_core.IOCoreModule.html" class="tsd-kind-icon">IOCore<wbr>Module</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="module_core.iomoduleasyncoptions.html" class="tsd-kind-icon">IOModule<wbr>Async<wbr>Options</a>
+						<a href="module_core.IOModuleAsyncOptions.html" class="tsd-kind-icon">IOModule<wbr>Async<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="module_core.iomoduleasyncoptions.html#imports" class="tsd-kind-icon">imports</a>
+								<a href="module_core.IOModuleAsyncOptions.html#imports" class="tsd-kind-icon">imports</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="module_core.iomoduleasyncoptions.html#inject" class="tsd-kind-icon">inject</a>
+								<a href="module_core.IOModuleAsyncOptions.html#inject" class="tsd-kind-icon">inject</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="module_core.iomoduleasyncoptions.html#usefactory" class="tsd-kind-icon">use<wbr>Factory</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="module_core.IOModuleAsyncOptions.html#useFactory" class="tsd-kind-icon">use<wbr>Factory</a>
 							</li>
 						</ul>
 					</li>
@@ -214,12 +214,13 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
