@@ -16,3 +16,4 @@ renovate.json
 .eslintrc
 .github
 *.tgz
+.yarn*
