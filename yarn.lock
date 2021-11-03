@@ -689,10 +689,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ioredis@4.26.7":
-  version "4.26.7"
-  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.26.7.tgz#8c8174b9db38f71f0e372174c66a031a2ca7d9cf"
-  integrity sha512-TOGRR+e1to00CihjgPNygD7+G7ruVnMi62YdIvGUBRfj11k/aWq+Fv5Ea8St0Oy56NngTBfA8GvLn1uvHvhX6Q==
+"@types/ioredis@4.28.0":
+  version "4.28.0"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.28.0.tgz#609b2ea0d91231df2dd7f67dd77436bc72584911"
+  integrity sha512-HSA/JQivJgV0e+353gvgu6WVoWvGRe0HyHOnAN2AvbVIhUlJBhNnnkP8gEEokrDWrxywrBkwo8NuDZ6TVPL9XA==
   dependencies:
     "@types/node" "*"
 
@@ -728,12 +728,7 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
 
-"@types/node@*":
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.2.tgz#c61d49f38af70da32424b5322eee21f97e627175"
-  integrity sha512-dxcOx8801kMo3KlU+C+/ctWrzREAH7YvoF3aoVpRdqgs+Kf7flp+PJDN/EX5bME3suDUZHsxes9hpvBmzYlWbA==
-
-"@types/node@16.7.1":
+"@types/node@*", "@types/node@16.7.1":
   version "16.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.1.tgz#c6b9198178da504dfca1fd0be9b2e1002f1586f0"
   integrity sha512-ncRdc45SoYJ2H4eWU9ReDfp3vtFqDYhjOsKlFFUDEn8V1Bgr2RjYal8YT5byfadWIRluhPFU6JiDOl0H6Sl87A==
