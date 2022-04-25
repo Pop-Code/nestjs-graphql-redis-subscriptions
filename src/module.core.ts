@@ -1,13 +1,14 @@
 import { DynamicModule, Global, Module, OnModuleDestroy, Optional } from '@nestjs/common';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
 import { RedisPubSub } from 'graphql-redis-subscriptions';
-import Redis from 'ioredis';
+import Redis, { RedisOptions } from 'ioredis';
 
 import { REDIS_CLIENT_TOKEN, REDIS_PUB_CONFIG_TOKEN, REDIS_PUB_SUB_TOKEN, REDIS_SUB_CONFIG_TOKEN } from './constants';
 import { InjectRedisClient, InjectRedisPubSub } from './helpers';
 
+
 export interface IOModuleAsyncOptions extends Pick<ModuleMetadata, 'imports'> {
-    useFactory: (...args: any[]) => Promise<Redis.RedisOptions> | Redis.RedisOptions;
+    useFactory: (...args: any[]) => Promise<RedisOptions> | RedisOptions;
     inject?: any[];
 }
 
@@ -17,7 +18,7 @@ export class IOCoreModule implements OnModuleDestroy {
     constructor(
         @Optional()
         @InjectRedisClient()
-        private readonly redisClient: Redis.Redis,
+        private readonly redisClient: Redis,
 
         @Optional()
         @InjectRedisPubSub()
@@ -42,7 +43,7 @@ export class IOCoreModule implements OnModuleDestroy {
         };
         const redisProvider = {
             provide: REDIS_CLIENT_TOKEN,
-            useFactory: (config: Redis.RedisOptions) => {
+            useFactory: (config: RedisOptions) => {
                 return new Redis(config);
             },
             inject: [configToken]
@@ -69,7 +70,7 @@ export class IOCoreModule implements OnModuleDestroy {
         };
         const redisPubSubProvider = {
             provide: REDIS_PUB_SUB_TOKEN,
-            useFactory: (pubOpts: Redis.RedisOptions, subOtps: Redis.RedisOptions) => {
+            useFactory: (pubOpts: RedisOptions, subOtps: RedisOptions) => {
                 return new RedisPubSub({
                     publisher: new Redis(pubOpts),
                     subscriber: new Redis(subOtps)
