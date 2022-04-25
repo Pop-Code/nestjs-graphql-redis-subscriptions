@@ -1,10 +1,11 @@
 import { DynamicModule, Global, Module, OnModuleDestroy, Optional } from '@nestjs/common';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
-import { RedisPubSub } from 'graphql-redis-subscriptions';
+import { RedisPubSub } from 'graphql-redis-subscriptions-graphql16-ioredis5';
 import Redis, { RedisOptions } from 'ioredis';
 
 import { REDIS_CLIENT_TOKEN, REDIS_PUB_CONFIG_TOKEN, REDIS_PUB_SUB_TOKEN, REDIS_SUB_CONFIG_TOKEN } from './constants';
 import { InjectRedisClient, InjectRedisPubSub } from './helpers';
+
 
 
 export interface IOModuleAsyncOptions extends Pick<ModuleMetadata, 'imports'> {
