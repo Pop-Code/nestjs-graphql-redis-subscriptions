@@ -1114,15 +1114,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ioredis@npm:4.28.10":
-  version: 4.28.10
-  resolution: "@types/ioredis@npm:4.28.10"
-  dependencies:
-    "@types/node": "*"
-  checksum: 0f2788cf25f490d3b345db8c5f8b8ce3f6c92cc99abcf744c8f974f02b9b3875233b3d22098614c462a0d6c41c523bd655509418ea88eb6249db6652290ce7cf
-  languageName: node
-  linkType: hard
-
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
   version: 2.0.3
   resolution: "@types/istanbul-lib-coverage@npm:2.0.3"
@@ -5003,7 +4994,6 @@ fsevents@^2.3.2:
     "@nestjs/core": 8.4.4
     "@nestjs/platform-express": 8.4.4
     "@nestjs/testing": 8.4.4
-    "@types/ioredis": 4.28.10
     "@types/jest": 27.4.1
     "@types/node": ^16.7.1
     "@typescript-eslint/eslint-plugin": 5.21.0
