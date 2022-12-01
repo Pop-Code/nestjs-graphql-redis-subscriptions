@@ -5013,7 +5013,7 @@ fsevents@^2.3.2:
     rxjs: 7.5.5
     ts-jest: 27.1.4
     ts-node: 10.7.0
-    tsconfig-paths: 3.14.1
+    tsconfig-paths: 4.1.1
     typedoc: 0.22.15
     typescript: 4.6.3
   peerDependencies:
@@ -6453,7 +6453,18 @@ resolve@^1.22.0:
   languageName: node
   linkType: hard
 
-"tsconfig-paths@npm:3.14.1, tsconfig-paths@npm:^3.14.1":
+"tsconfig-paths@npm:4.1.1":
+  version: 4.1.1
+  resolution: "tsconfig-paths@npm:4.1.1"
+  dependencies:
+    json5: ^2.2.1
+    minimist: ^1.2.6
+    strip-bom: ^3.0.0
+  checksum: 3a1c6c8f614370ee648313d71bbde2a3bcdfb7e99ad068b7791d7b04fac78f120021c96ab4ec285ba78469f13fc08317a987fdf0d90ea03f8d47305e25bd29c6
+  languageName: node
+  linkType: hard
+
+"tsconfig-paths@npm:^3.14.1":
   version: 3.14.1
   resolution: "tsconfig-paths@npm:3.14.1"
   dependencies:
